@@ -1,0 +1,341 @@
+/* Start Global Rules */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+html {
+    scroll-behavior: smooth;
+}
+input:hover {
+    outline: none;
+}
+/* End Global Rules */
+
+
+/* Start Header */
+header {
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    min-width: 100%;
+    width: 100%;
+    z-index: 999;
+}
+header .name {
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+header ul {
+    display: flex;
+    gap: 20px;
+}
+header ul li {
+    padding: 8px 16px;
+    transition: 0.3s;
+}
+header ul li:hover {
+    background-color: #ccc;
+    border-radius: 8px;
+}
+header ul li a {
+    color: black;
+    font-weight: bold;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+header .name a span:first-child {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black;
+    letter-spacing: 2px;
+    font-size: 18px;
+    margin-right: 5px;
+}
+header .name a span:last-child {
+    color: black;
+    text-transform: capitalize;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+header .name a {
+    padding: 8px 16px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+header .name a:hover {
+    background-color: #ccc;
+}
+/* End Header */
+
+
+/* Start Bachground */
+.background {
+    height: 100vh;
+    background-image: url(../img/architect.jpg);
+    background-size: cover;
+    position: relative;
+}
+.background .flex {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.background .logo span:first-child {
+    padding: 8px 16px;
+    text-align: center;
+    background-color: #000;
+    opacity: 0.75;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.background .logo span:last-child {
+    margin-left: 5px;
+    text-transform: capitalize;
+    color: #f1f1f1;
+    font-size: 24px;
+    letter-spacing: 5px;
+}
+/* End Bachground */
+
+
+/* Start Project */
+.project {
+    padding: 20px;
+    margin-top: 50px;
+}
+.project .pro {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+.project .grid {
+    margin-top: 30px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+.project .grid img {
+    width: 100%;
+}
+.project .img {
+    position: relative;
+}
+.project .img::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0;
+    background-color: rgb(0 0 0 / 75%);
+    padding: 5px 30px;
+    color: white;
+}
+.project .box-1 .img::before {
+    content: "Summer House";
+    font-size: 18px;
+}
+.project .box-2 .img::before {
+    content: "Brick House";
+    font-size: 18px;
+}
+.project .box-3 .img::before {
+    content: "Renovated";
+    font-size: 18px;
+}
+.project .box-4 .img::before {
+    content: "Barn House";
+    font-size: 18px;
+}
+.project .box-5 .img::before {
+    content: "Summer House";
+    font-size: 18px;
+}
+.project .box-6 .img::before {
+    content: "Brick House";
+    font-size: 18px;
+}
+.project .box-7 .img::before {
+    content: "Renovated";
+    font-size: 18px;
+}
+.project .box-8 .img::before {
+    content: "Barn House";
+    font-size: 18px;
+}
+/* End Project */
+
+
+/* Start About */
+.about {
+    padding: 20px;
+    margin-top: 50px;
+}
+.about .about-1 {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+.about .lorem {
+    margin-top: 20px;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: rgb(0 0 0 / 70%);
+}
+.about .people img {
+    width: 100%;
+    transition: 0.5s;
+}
+.about .people {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px , 1fr));
+    gap: 10px;
+    margin-top: 30px;
+}
+.about .people .box {
+    box-shadow: 0 0 10px #ddd;
+    margin-bottom: 10px;
+}
+.about .people .box:hover img {
+    filter: grayscale(1);
+}
+.about .people .name {
+    padding: 10px 10px 0;
+}
+.about .people .box .name span {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: #888;
+}
+.about .people .box p {
+    padding: 0 10px;
+    color: black;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.about .people .box .link {
+    padding-top: 5px;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #eee;
+    transition: 0.5s;
+}
+.about .people .box .link:hover {
+    background-color: #ddd;
+}
+.about .people .box a {
+    color: black;
+}
+/* End About */
+
+
+/* Start Contact */
+.contact {
+    padding: 20px;
+    margin-top: 50px;
+}
+.contact .contact-1 {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+.contact span {
+    display: block;
+    margin: 15px 0;
+}
+.contact .input input {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+.contact .input input:focus::placeholder {
+    opacity: 0;
+    transition: 0.5s;
+}
+.contact .submit {
+    margin-top: 20px;
+    padding: 8px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: 700;
+    transition: 0.5s;
+}
+.contact .submit:hover {
+    background-color: #ccc;
+    color: black;
+}
+/* End Contact */
+
+/* Start Map */
+.map {
+    background-image: url(../img/map.jpg);
+    background-size: cover;
+    height: 100vh;
+    margin: 20px 15px 10px;
+}
+/* End Map */
+
+/* Start Footer */
+footer {
+    text-align: center;
+    background-color: #222;
+    padding: 20px;
+    color: white;
+}
+footer span:last-child a {
+    color: white;
+    text-decoration: underline;
+    margin-left: 5px;
+    transition: 0.3s;
+}
+footer span:last-child a:hover {
+    color: green;
+}
+/* End Footer */
+
+
+
+/* Start Media */
+@media (max-width: 767px) {
+    header {
+        flex-direction: column;
+    }
+    header ul {
+        gap: 0;
+    }
+    .background .logo span:last-child  {
+        display: none;
+    }
+    .project .grid {
+        grid-template-columns:  minmax(200px, 1fr);
+    }
+    .about .people {
+        grid-template-columns: minmax(250px , 1fr);
+    }
+}
+/* End Media */
